@@ -1,0 +1,93 @@
+\documentclass[11pt,oneside,a4paper]{0_frontmatter/PhDthesisPSnPDF}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{stackengine}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\let\savedegree\degree
+\let\degree\relax
+\usepackage{mathabx}
+\let\degree\savedegree
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[utf8x]{inputenc} 
+
+\newcolumntype{C}{>{\centering\arraybackslash}p{3.5cm}}
+\newcolumntype{C}{>{\centering\arraybackslash}p{4.5cm}}
+\include{0_frontmatter/MacroFile1}
+\title{A Tool for Anticancer Peptide Prediction Using Feature Subspacing Ensemble}
+\ifpdf
+  \author{
+  H.M. Fazlul Haque , Student Id: 011 141 169 \\
+  Fariha Arifin , Student Id: 011 151 025\\
+  Fatima Islam Mouri , Student Id: 011 151 108\\ 
+  Kamrul Islam Tushar , Student Id: 011 141 139\\
+  Rana Kumar Ghosh , Student Id: 011 132 149\\ 
+  [2ex]
+}
+  \collegeordept{Department of Computer Science and Engineering}
+ \university{United International University}
+  \crest{\includegraphics[width=4cm]{UIU-Logo.PNG}}
+\else
+  \author{Name}
+  \collegeordept{Department of Computer Science and Engineering}
+  \university{United International University}
+  \crest{\includegraphics[width=4cm]{UIU-Logo.PNG}}
+\fi
+%\renewcommand{\submittedtext}{change the default text here if needed}
+\degree{BSc in Computer Science \& Engineering}
+\degreedate{September 2018}
+% turn of those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+\begin{document}
+%\language{english}
+% sets line spacing
+%\renewcommand\baselinestretch{1.2}
+%\baselineskip=18pt plus1pt
+
+%: ------ generate cover page ------
+\maketitle  % print the title page with above variables
+\include{0_frontmatter/declaration}
+\include{0_frontmatter/certificate}
+\include{0_frontmatter/abstract}
+%\include{0_frontmatter/dedication}
+%\include{0_frontmatter/publications}
+%\include{0_frontmatter/acknowledgement}
+
+%: ------ contents -------
+\setcounter{secnumdepth}{3} % organisational level that receives a numbers
+\setcounter{tocdepth}{3}    % print table of contents for level 3
+\tableofcontents     
+\listoffigures	
+\listoftables 
+%\listofalgorithms 
+
+% the main text starts here with the introduction, 1st chapter,...
+\mainmatter
+%\renewcommand{\chaptername}{} % uncomment to print only "1" not "Chapter 1"
+% Parts of the thesis are included below. Rename the files as required.
+\include{chapter_1/Introduction_ch1}	
+\include{chapter_2/Related-Work_ch2}  
+\include{chapter_3/Proposed-Method_ch3}	
+\include{chapter_5/Conclusion_ch5}		
+\include{chapter_4/Results_ch4}	
+\include{chapter_7/Application_ch7}
+\include{chapter_6/Conclusion_ch6}
+
+
+
+\bibliographystyle{6_backmatter/IEEEtran}
+
+\bibliography{6_backmatter/Farid_bib} 
+
+%% ----------------------------------------------------------------
+% Now begin the Appendices, including them as separate files
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+%\input{6_backmatter/AppendixA}	% Appendix Title
+%\input{6_backmatter/AppendixB}	
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+\backmatter
+\end{document}

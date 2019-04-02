@@ -1,0 +1,39 @@
+Technical Tools:
+
+\begin{minipage}[b]{0.0\linewidth}
+1.Latex
+\end{minipage}
+\hspace{2cm}
+\begin{minipage}[b]{0.0\linewidth}
+\includegraphics[height=1\baselineskip]{latex}
+\end{minipage}
+ 
+\begin{minipage}[b]{0.0\linewidth}
+1.Latex
+\end{minipage}
+\hspace{2cm}
+\begin{minipage}[b]{0.0\linewidth}
+\includegraphics[height=1\baselineskip]{latex}
+\end{minipage}
+
+\begin{minipage}[b]{0.0\linewidth}
+1.Latex
+\end{minipage}
+\hspace{2cm}
+\begin{minipage}[b]{0.0\linewidth}
+\includegraphics[height=1\baselineskip]{latex}
+\end{minipage}
+
+\begin{minipage}[b]{0.0\linewidth}
+1.Latex
+\end{minipage}
+\hspace{2cm}
+\begin{minipage}[b]{0.0\linewidth}
+\includegraphics[height=1\baselineskip]{latex}
+\end{minipage}
+
+Programming Languages
+1.Python
+2. PHP
+3. JavaScript    
+4.Mysql   
